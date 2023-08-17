@@ -36,9 +36,9 @@ jobs:
       run: mvn package
 
     - name: execute
-      run: java -cp target/exittest-1.0-SNAPSHOT.jar com.jcg.maven.App
+      run: java -cp target/Exittest-1.0-SNAPSHOT.jar com.jcg.maven.App
 
     - uses: actions/upload-artifact@v3
       with:
         name: my-artifact
-        path: target/exittest-1.0-SNAPSHOT.jar
+        path: target/Exittest-1.0-SNAPSHOT.jar
